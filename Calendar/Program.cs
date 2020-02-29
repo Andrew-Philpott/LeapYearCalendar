@@ -1,6 +1,6 @@
 using System;
 using Calendar;
-class Program
+public class Program
 {
   public static void Main()
   {
@@ -8,7 +8,7 @@ class Program
     Console.WriteLine("Enter a year.");
     string yearString = Console.ReadLine();
     int yearInt = int.Parse(yearString);
-    bool isLeapYear = Calendar.LeapYear(yearInt);
+    bool isLeapYear = LeapYear.IsLeapYear(yearInt);
     if (isLeapYear)
     {
       Console.WriteLine(yearInt + " is a leap year!");
