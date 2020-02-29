@@ -2,7 +2,7 @@ namespace Calendar
 {
   public class LeapYear
   {
-    public bool IsLeapYear(int year)
+    public static bool IsLeapYear(int year)
     {
       if (year % 400 == 0)
       {
